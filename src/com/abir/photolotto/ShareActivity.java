@@ -271,7 +271,7 @@ public class ShareActivity extends Activity {
 		new S3PutObjectTask().execute("");
 
 		setContentView(R.layout.activity_share);
-		List<String> strings = Arrays.asList(new String[]{"facebook", "twitter", "album", "email"/*, "instagram"*/});
+		List<String> strings = Arrays.asList(new String[]{"facebook", "twitter", "album", "email", "instagram"});
 		ListView listView = (ListView) findViewById(R.id.listViewShareList);
 		ArrayAdapter<String> arrayAdapter = new ShareAdapter(this, strings);
 		listView.setAdapter(arrayAdapter);
