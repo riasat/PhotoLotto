@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:contentDescription="@string/app_name" />
+	
+	<ImageView
+        android:id="@+id/imageViewBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tablebk"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/app_name" />
+    
+    <Button
+        android:id="@+id/button_home_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:enabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:text="@string/button_home_reload"
+        android:textColor="@android:color/darker_gray"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_home_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/button_home_start"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/loadingsquare" />
+
+</RelativeLayout>

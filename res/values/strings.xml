@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pixta</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_home_start">Start</string>
+    <string name="button_home_reload">Reload</string>
+    <string name="terms_and_conditions"><u>View Terms and Conditions</u></string>
+    <string name="applicationId">469543539748993</string>
+    <string name="title_activity_facebook">Facebook</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fb">FBActivity</string>
+
+</resources>

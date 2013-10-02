@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <WebView
+        android:id="@+id/webViewHtml"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/buttonDoneHtml"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonDoneHtml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textViewDummyHtml"
+        android:text="Done" />
+
+    <Button
+        android:id="@+id/buttonShareAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/textViewDummyHtml"
+        android:text="Share Again" />
+
+    <TextView
+        android:id="@+id/textViewDummyHtml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonShareAgain"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+	
+</RelativeLayout>

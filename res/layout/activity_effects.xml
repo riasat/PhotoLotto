@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/full_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gridViewEffects"
+        android:layout_margin="10dip"
+        android:contentDescription="@string/app_name" />
+
+    <GridView
+        android:id="@+id/gridViewEffects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewCaptureBar_"
+        android:layout_centerHorizontal="true"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:layout_margin="10dp"
+        android:verticalSpacing="5dp" >
+    </GridView>
+
+    <ImageView
+        android:id="@+id/imageViewCaptureBar_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/takephoto_background_bar"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textViewEffectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonSelectEffect"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Normal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSelectEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/nav_apply" />
+
+    <Button
+        android:id="@+id/buttonSelectEffectBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/nav_back" />
+
+</RelativeLayout>

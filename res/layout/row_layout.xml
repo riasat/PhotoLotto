@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:background="@drawable/tablebk"
+	android:paddingBottom="5dip"
+	>
+	
+	<ImageView
+	    android:id="@+id/imageViewEvent"
+	    android:layout_width="65dip"
+	    android:layout_height="65dip"
+	    android:src="@drawable/ic_launcher"
+	    android:layout_centerVertical="true"
+	    android:padding="5dip"
+	    android:layout_margin="5dip"
+	    android:contentDescription="@string/app_name" />
+	
+	<TextView
+	    android:id="@+id/textViewHeading"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/imageViewEvent"
+	    android:text="Header"
+	    android:layout_margin="5dip"
+	    android:textStyle="bold"
+	    android:textColor="@android:color/black" >
+
+	</TextView>
+	
+	<TextView android:id="@+id/textViewDescription" 
+	    android:layout_below="@+id/textViewHeading"
+	    android:layout_toRightOf="@+id/imageViewEvent"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Description"
+	    android:layout_marginLeft="5dip"
+		android:maxLines="1"
+		android:textColor="@android:color/black">
+	</TextView>
+
+	<TextView android:id="@+id/textViewDescription2" 
+	    android:layout_below="@+id/textViewDescription"
+	    android:layout_toRightOf="@+id/imageViewEvent"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Description2"
+	    android:layout_marginLeft="5dip"
+	    android:maxLines="1"
+		android:textColor="@android:color/black">
+	</TextView>
+	
+	<ImageView
+	    android:id="@+id/imageViewRightArrow"
+	    android:layout_width="30dip"
+	    android:layout_height="30dip"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/eventlistarrow"
+	    android:contentDescription="@string/app_name" />
+</RelativeLayout>

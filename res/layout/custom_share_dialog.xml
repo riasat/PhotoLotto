@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewDialogHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="Do you accept the Terms and Conditions?"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewDialogHeading"
+            android:text="@string/terms_and_conditions"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <Button
+            android:id="@+id/buttonTermsCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewTerms"
+            android:layout_toLeftOf="@+id/textViewDummy"
+            android:background="@drawable/terms_cancel" />
+
+        <Button
+            android:id="@+id/buttonTermsOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewTerms"
+            android:layout_toRightOf="@+id/textViewDummy"
+            android:background="@drawable/terms_ok"/>
+
+        <TextView
+            android:id="@+id/textViewDummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/buttonTermsCancel"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

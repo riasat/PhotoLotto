@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abir.photolotto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.abir.photolotto.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.HomeActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.SelectEventActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.SelectCameraOverlayActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.SelectEffectActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.ShareActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.BeforeHtmlActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.EmailActivity"
+            android:screenOrientation="sensorPortrait" >
+        </activity>        
+        <activity
+            android:name="com.abir.photolotto.TermsConditionsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.android.twitter.TwitterActivity"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/applicationId" />
+
+        <activity
+            android:name="com.android.facebook.FacebookActivity"
+            android:label="@string/title_activity_facebook" >
+        </activity>
+        <activity
+            android:name="com.abir.photolotto.FBActivity"
+            android:label="@string/title_activity_fb" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,4 +1,2 @@
-PhotoLotto
-==========
-
-Capture and share your photos!
+PhotoLotto_Android
+==================

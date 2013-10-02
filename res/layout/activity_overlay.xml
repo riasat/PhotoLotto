@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="640px"
+        android:layout_height="640px"
+        android:layout_above="@+id/gridViewOverlay"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewOverlay"
+        android:layout_width="640px"
+        android:layout_height="640px"
+        android:layout_above="@+id/gridViewOverlay"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name" />
+
+    <GridView
+        android:id="@+id/gridViewOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCapture"
+        android:layout_centerHorizontal="true"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="5dp"
+        android:layout_margin="10dp" >
+    </GridView>
+
+    <ImageView
+        android:id="@+id/imageViewCaptureBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/takephoto_background_bar"
+        android:contentDescription="@string/app_name" />
+
+    <Button
+        android:id="@+id/buttonCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/takephoto_cam" />
+    
+   <Button
+        android:id="@+id/buttonToggleCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewCaptureBar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dip"
+        android:background="@drawable/takephoto_switchcam1" />
+
+    <Button
+        android:id="@+id/buttonFlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:layout_alignTop="@+id/imageViewCaptureBar"
+        android:layout_toLeftOf="@+id/buttonToggleCamera"
+        android:background="@drawable/takephoto_flashoff" />
+    
+</RelativeLayout>
