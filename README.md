@@ -4,3 +4,5 @@ PhotoLotto_Android
 2. Import PullToRefreshListView. Set project as library.
 3. Import PhotoLotto.
 4. Add PullToRefreshListView library project to this project. 
+
+APK availabble here: https://docs.google.com/file/d/0B3rCx9uB6sI7TVNMVGl1ejViOU0/edit?usp=sharing
