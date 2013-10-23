@@ -1,3 +1,5 @@
+![Alt text](http://i41.tinypic.com/280mo0g.jpg?raw=true)
+
 PhotoLotto_Android
 ==================
 1. Download PullToRefreshListView from here: https://github.com/erikwt/PullToRefresh-ListView
